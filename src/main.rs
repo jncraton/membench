@@ -14,7 +14,6 @@ fn main() {
   let mut write_avg = 0.0;
 
   for i in 0..SAMPLES {
-    //let us =  bench_random_write(size).num_microseconds().unwrap();
     let (duration_write, duration_read, bytes) =  bench_sequential();
     let us_write = duration_write.num_microseconds().unwrap() as f64;
     let us_read = duration_read.num_microseconds().unwrap() as f64;
