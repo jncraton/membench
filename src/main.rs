@@ -5,7 +5,7 @@ extern crate time;
 use time::{Duration, PreciseTime};
 
 const BUF_SIZE : usize = 512 * 1024;
-const SAMPLES : usize = 64;
+const SAMPLES : usize = 512;
 
 fn main() {
   println!("run,write,read,bytes");
